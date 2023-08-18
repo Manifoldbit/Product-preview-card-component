@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--external link responsible for the cart icon-->
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(30, 38%, 92%);
+      min-width: max-content;
+      margin: 0;
+    }
+
+    .container {
+
+      display: flex;
+      min-height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .product {
+      background-color: white;
+      max-width: 45%;
+      border-radius: 0.936rem;
+      display: flex;
+    }
+
+    .product-info {
+      margin: 3%;
+      padding: 0 6%;
+
+    }
+
+    .product-image {
+      width: 50%;
+      border-radius: 0.936rem 0 0 0.936rem;
+
+    }
+
+    .product-head {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: gray;
+    }
+
+    .product-name {
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .current-product-price {
+      font-size: 2rem;
+      font-family: sans-serif;
+      font-weight: bolder;
+      float: left;
+      margin: 5% 0;
+      color: hsl(158, 36%, 37%);
+    }
+
+    .previous-product-price {
+      margin: 10% 8%;
+      float: left;
+      text-decoration: line-through;
+      font-size: 0.7rem;
+      font-family: sans-serif;
+      color: grey;
+    }
+
+    .product-description {
+      color: grey;
+    }
+
+    .cart {
+      background-color: hsl(158, 36%, 37%);
+      padding: 5% 30%;
+      color: white;
+      border-radius: 0.6rem;
+      border: none;
+      margin: 8% 0%;
+      position: relative;
+    }
+
+
+    .cart:hover {
+      background-color: hsl(212, 21%, 14%);
+    }
+
+    footer {
+      margin: -1rem 0 0 0;
+    }
+
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .fa-cart-shopping {
+      color: white;
+      bottom: 2.7rem;
+      left: 2.3rem;
+      position: relative;
+      font-size: 0.75rem;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- The main content -->
+
+  <main class="container"> <!--the container that holds the product-->
+
+    <div class="product"> <!-- the div that holds all the content, with the background color of white-->
+
+      <img class="product-image" src="images/image-product-desktop.jpg" alt="Perfume"> <!--the product image-->
+
+      <div class="product-info"> <!--the div that holds the written information inside the product-->
+
+        <p class="product-head">PERFUME</p> <!--the head of the product information-->
+
+        <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1> <!--the name of the of the product-->
+
+        <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.</p> <!--the product description-->
+
+        <b class="current-product-price">$149.99</b> <!--the product current price-->
+
+        <p class="previous-product-price">$169.99</p> <!--the product previous price-->
+
+        <button class="cart">Add to Cart</button> <!--the cart button for the product-->
+
+        <i class="fa-solid fa-cart-shopping"></i> <!--the cart icon-->
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- The footer -->
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+        Mentor</a>.
+      Coded by <a href="https://github.com/Manifoldbit" target="_blank">Bit_Codes</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
