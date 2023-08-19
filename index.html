@@ -35,7 +35,14 @@
       max-width: 45%;
       border-radius: 0.936rem;
       display: flex;
+      flex-direction: column;
     }
+
+    @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  [class*="product"] {
+  flex-direction: row;
+  }
 
     .product-info {
       margin: 3%;
@@ -52,24 +59,29 @@
     .product-head {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       color: gray;
+      text-transform: uppercase;
     }
 
     .product-name {
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
 
+    .product-prices{
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
     .current-product-price {
       font-size: 2rem;
       font-family: sans-serif;
       font-weight: bolder;
-      float: left;
       margin: 5% 0;
       color: hsl(158, 36%, 37%);
     }
 
     .previous-product-price {
       margin: 10% 8%;
-      float: left;
       text-decoration: line-through;
       font-size: 0.7rem;
       font-family: sans-serif;
@@ -112,6 +124,7 @@
 
     a:hover {
       text-decoration: underline;
+      cursor:pointer;
     }
 
     .fa-cart-shopping {
@@ -136,16 +149,17 @@
 
       <div class="product-info"> <!--the div that holds the written information inside the product-->
 
-        <p class="product-head">PERFUME</p> <!--the head of the product information-->
+        <p class="product-head">Perfume</p> <!--the head of the product information-->
 
         <h1 class="product-name">Gabrielle Essence Eau De Parfum</h1> <!--the name of the of the product-->
 
         <p class="product-description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
           Perfumer-Creator for the House of CHANEL.</p> <!--the product description-->
 
-        <b class="current-product-price">$149.99</b> <!--the product current price-->
-
-        <p class="previous-product-price">$169.99</p> <!--the product previous price-->
+        <div class="product-prices">
+          <b class="current-product-price">$149.99</b> <!--the product current price-->
+          <p class="previous-product-price">$169.99</p> <!--the product previous price-->
+        </div>
 
         <button class="cart">Add to Cart</button> <!--the cart button for the product-->
 
