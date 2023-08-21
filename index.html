@@ -114,8 +114,11 @@
       border: none;
       margin: 8% 0%;
       position: relative;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      cursor: pointer;
     }
-
 
     .cart:hover {
       background-color: hsl(212, 21%, 14%);
@@ -179,9 +182,9 @@
           <p class="previous-product-price">$169.99</p> <!--the product previous price-->
         </div>
 
-        <button class="cart">Add to Cart</button> <!--the cart button for the product-->
+        <button class="cart" href="#"><img src="images/icon-cart.svg" alt="">Add to Cart</button>
 
-        <i class="fa-solid fa-cart-shopping"></i> <!--the cart icon-->
+
 
       </div>
 
