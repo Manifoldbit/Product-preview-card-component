@@ -35,15 +35,6 @@
       max-width: 45%;
       border-radius: 0.936rem;
       display: flex;
-      flex-direction: column;
-    }
-
-    @media only screen and (min-width: 768px) {
-
-      /* For desktop: */
-      [class*="product"] {
-        flex-direction: row;
-      }
     }
 
     .product-info {
@@ -53,8 +44,7 @@
     }
 
     .product-image {
-      display: block;
-      max-width: 100%;
+      max-width: 50%;
       border-radius: 0.936rem 0 0 0.936rem;
 
     }
@@ -148,7 +138,11 @@
 
     <div class="product"> <!-- the div that holds all the content, with the background color of white-->
 
-      <img class="product-image" src="images/image-product-desktop.jpg" alt="Perfume"> <!--the product image-->
+      <picture>
+        <source media="(min-width:600px )" srcset="images/image-product-desktop.jpg">
+        <img src="images/image-product-mobile.jpg" alt="">
+      </picture>
+      <!--<img class="product-image" src="images/image-product-desktop.jpg" alt="Perfume"> <!--the product image-->>
 
       <div class="product-info"> <!--the div that holds the written information inside the product-->
 
